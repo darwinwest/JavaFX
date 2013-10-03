@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0000084472631" prefWidth="692.0" xmlns:fx="http://javafx.com/fxml"
+fx:controller="view.controller.cdCarrera">
+  <children>
+    <ToolBar layoutX="0.0" layoutY="0.0" prefWidth="692.0">
+      <items>
+        <Button fx:id="btnGuardar" mnemonicParsing="false" prefWidth="72.0" text="Guardar" onAction="#Guardar"/>
+        <Button fx:id="btnEliminar" mnemonicParsing="false" text="Eliminar" onAction="#Eliminar" />
+        <Button fx:id="btnModificar" mnemonicParsing="false" text="Modificar" />
+        <Button fx:id="btnNuevo" mnemonicParsing="false" text="Nuevo" onAction="#Nuevo" />
+        <Button fx:id="btnCerrar" mnemonicParsing="false" text="Cerrar" />
+      </items>
+    </ToolBar>
+    <Label fx:id="lblNombre" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="57.0" prefWidth="108.0" text="Nombre:" />
+    <Label fx:id="lblSiglas" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="99.0" prefWidth="108.0" text="Siglas:" />
+    <Label fx:id="lblJDC" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="142.0" prefWidth="108.0" text="Jefe de Carrera:" />
+    <Label fx:id="lblmatricula" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="184.0" prefWidth="108.0" text="Matricula:" />
+    <Label fx:id="lblAcreditada" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="232.0" prefWidth="108.0" text="Acreditada:" />
+    <Label fx:id="lblMensaje" layoutX="0.0" layoutY="268.0" prefHeight="22.0" prefWidth="692.0" text="Mensaje:" />
+    <TextField fx:id="txtNombre" layoutX="140.0" layoutY="57.0" prefWidth="143.0" />
+    <TextField fx:id="txtSiglas" layoutX="140.0" layoutY="99.0" prefWidth="143.0" />
+    <TextField fx:id="txtJDC" layoutX="140.0" layoutY="142.0" prefWidth="143.0" />
+    <TextField fx:id="txtMatricula" layoutX="140.0" layoutY="184.0" prefWidth="143.0" />
+    <ComboBox fx:id="cboAcreditada" layoutX="140.0" layoutY="230.0" prefHeight="21.0" prefWidth="143.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="SI" />
+          <String fx:value="No" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TableView fx:id="tblCarrera" layoutX="301.0" layoutY="57.0" prefHeight="194.0" prefWidth="377.0">
+     
+    </TableView>
+  </children>
+</AnchorPane>

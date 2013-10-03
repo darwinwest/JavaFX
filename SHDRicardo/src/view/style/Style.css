@@ -1,0 +1,6 @@
+.root{
+    -fx-font-size: 12pt;
+    -fx-font-family: "Arial";
+    -fx-base: #008b8b;
+    -fx-background: rgb(225, 228, 203);
+}
