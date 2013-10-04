@@ -12,7 +12,7 @@ public class Alumnos {
 		
 	}
 
-	public Alumnos(String nombre, String paterno, String materno, String fecha,
+	/*	public Alumnos(String nombre, String paterno, String materno, String fecha,
 			String sexo, Carrera oCarrera) {
 		super();
 		setNombre(nombre);
@@ -21,7 +21,8 @@ public class Alumnos {
 		setFecha(fecha);
 		setSexo(sexo);
 		setoCarrera(oCarrera);
-	}
+	}*/ 
+	// está de más...
 	
 	public Alumnos(String nombre, String paterno, String materno, String fecha,
 			String sexo) {
